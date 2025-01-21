@@ -1,0 +1,25 @@
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+// what this line of code means create a users tab with schema this
+model User {
+  id           Int   @id @default(autoincrement())
+  username     String 
+  password     String
+  age          Int
+  todo         Todo[]
+}
+model Todo {
+  create   String 
+  delete   String
+  id        Int  @id @default(autoincrement())
+  userId    Int
+  // so what these ,means that i ahve made a relation form todos to user table where userId refer to id of user table
+  user      User  @relation(fields: [userId] , references:[id])
+}
