@@ -1,6 +1,0 @@
-{
-    "lldb.showDisassembly": "auto",
-    "lldb.dereferencePointers": true,
-    "lldb.consoleMode": "commands",
-    "crackboard.sessionKey": "828e9a0d893c9d6291a366777448a53c3ea35dd054190db9f8949694001b45e4"
-}

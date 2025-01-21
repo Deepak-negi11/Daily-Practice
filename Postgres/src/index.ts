@@ -114,5 +114,10 @@
 //     FROM users u
 //     JOIN address a ON u.id = a.user_id
 //     WHERE u.id = $1`
-//     const result = await  client.query(response ,[])
-// }
+//     const result = await  client.query(response ,['2'])
+
+// Joins in postgrees
+
+// import { Client } from  "pg";
+
+// const client =  new Client ("postgresql://prisma%201_owner:1gLucemUz7oY@ep-tight-lab-a8m4vbfj.eastus2.azure.neon.tech/prisma%201?sslmode=require")
